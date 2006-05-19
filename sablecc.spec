@@ -8,7 +8,7 @@ Group:		Development/Languages/Java
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}-src.tar.gz
 # Source0-md5:	62b84770389f82d997ddf832fa535191
 URL:		http://sablecc.sf.net/
-BuildRequires:	jakarta-ant >= 1.5
+BuildRequires:	ant >= 1.5
 BuildRequires:	xerces-j
 BuildConflicts:	sablecc
 Requires:	jre
