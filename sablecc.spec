@@ -5,9 +5,9 @@ Version:	2.17.2
 Release:	0.1
 License:	LGPL
 Group:		Development/Languages/Java
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}-src.tar.gz
+Source0:	http://dl.sourceforge.net/sablecc/%{name}-%{version}-src.tar.gz
 # Source0-md5:	62b84770389f82d997ddf832fa535191
-URL:		http://sablecc.sf.net/
+URL:		http://sablecc.sourceforge.net/
 BuildRequires:	ant >= 1.5
 BuildRequires:	xerces-j
 BuildConflicts:	sablecc
