@@ -1,5 +1,5 @@
 Summary:	SableCC - the Sable Research Group's Compiler Compiler
-Summary(pl):	SableCC - kompilator kompilatorów z Sable Research Group
+Summary(pl.UTF-8):   SableCC - kompilator kompilatorÃ³w z Sable Research Group
 Name:		sablecc
 Version:	2.17.2
 Release:	0.1
@@ -30,18 +30,18 @@ the abstract syntax tree using inheritance. These two design decisions
 lead to a tool that supports a shorter development cycle for
 constructing compilers.
 
-%description -l pl
-SableCC to obiektowo zorientowany szkielet generuj±cy kompilatory
-(oraz interpretery) w jêzyku programowania Java. Ten szkielet bazuje
-na dwóch fundamentalnych decyzjach projektowych. Po pierwsze, szkielet
-u¿ywa technik zorientowanych obiektowo do automatycznego zbudowania
-abstrakcyjnego drzewa sk³adni ze ¶cis³ymi typami, zgodnego z gramatyk±
-kompilowanego jêzyka oraz upraszczaj±cego odpluskwianie. Po drugie,
-szkielet ten generuje klasy chodz±ce po drzewach przy u¿yciu
+%description -l pl.UTF-8
+SableCC to obiektowo zorientowany szkielet generujÄ…cy kompilatory
+(oraz interpretery) w jÄ™zyku programowania Java. Ten szkielet bazuje
+na dwÃ³ch fundamentalnych decyzjach projektowych. Po pierwsze, szkielet
+uÅ¼ywa technik zorientowanych obiektowo do automatycznego zbudowania
+abstrakcyjnego drzewa skÅ‚adni ze Å›cisÅ‚ymi typami, zgodnego z gramatykÄ…
+kompilowanego jÄ™zyka oraz upraszczajÄ…cego odpluskwianie. Po drugie,
+szkielet ten generuje klasy chodzÄ…ce po drzewach przy uÅ¼yciu
 rozszerzonej wersji wzorca, co pozwala na implementowanie akcji dla
-wêz³ów abstrakcyjnego drzewa sk³adni przy u¿yciu dziedziczenia. Te
-dwie decyzje projektowe daj± narzêdzie wspieraj±ce krótszy cykl
-produkcji przy konstruowaniu kompilatorów.
+wÄ™zÅ‚Ã³w abstrakcyjnego drzewa skÅ‚adni przy uÅ¼yciu dziedziczenia. Te
+dwie decyzje projektowe dajÄ… narzÄ™dzie wspierajÄ…ce krÃ³tszy cykl
+produkcji przy konstruowaniu kompilatorÃ³w.
 
 %prep
 %setup -q
