@@ -1,5 +1,5 @@
 Summary:	SableCC - the Sable Research Group's Compiler Compiler
-Summary(pl.UTF-8):   SableCC - kompilator kompilatorów z Sable Research Group
+Summary(pl.UTF-8):	SableCC - kompilator kompilatorów z Sable Research Group
 Name:		sablecc
 Version:	2.17.2
 Release:	0.1
