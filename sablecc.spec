@@ -51,7 +51,7 @@ ant jar
 cat >bin/sablecc <<EOF
 #!/bin/sh
 
-exec java -jar %{_javalibdir}/%{name}-%{version}.jar $@
+exec java -jar %{_javalibdir}/%{name}-%{version}.jar \$@
 EOF
 
 %install
