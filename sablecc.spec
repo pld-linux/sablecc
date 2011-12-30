@@ -1,16 +1,15 @@
 Summary:	SableCC - the Sable Research Group's Compiler Compiler
 Summary(pl.UTF-8):	SableCC - kompilator kompilatorów z Sable Research Group
 Name:		sablecc
-Version:	2.17.2
+Version:	3.2
 Release:	0.1
 License:	LGPL
 Group:		Development/Languages/Java
-Source0:	http://dl.sourceforge.net/sablecc/%{name}-%{version}-src.tar.gz
-# Source0-md5:	62b84770389f82d997ddf832fa535191
+Source0:	http://dl.sourceforge.net/sablecc/%{name}-%{version}.zip
+# Source0-md5:	0c38a98fddc374e5d4b67bf4c2ff4c19
 URL:		http://sablecc.sourceforge.net/
 BuildRequires:	ant >= 1.5
 BuildRequires:	xerces-j
-BuildConflicts:	sablecc
 Requires:	jre
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -49,12 +48,19 @@ produkcji przy konstruowaniu kompilatorów.
 %build
 ant jar
 
+cat >bin/sablecc <<EOF
+#!/bin/sh
+
+exec java -jar %{_javalibdir}/%{name}-%{version}.jar $@
+EOF
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_javalibdir}
+install -d $RPM_BUILD_ROOT{%{_javalibdir},%{_bindir}}
 cp lib/%{name}.jar $RPM_BUILD_ROOT%{_javalibdir}
 ln -sf %{name}.jar $RPM_BUILD_ROOT%{_javalibdir}/%{name}-%{version}.jar
+cp bin/sablecc $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -62,4 +68,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS README.html THANKS
+%attr(755,root,root) %{_bindir}/sablecc
 %{_javalibdir}/*.jar
