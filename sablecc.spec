@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 Summary:	SableCC - the Sable Research Group's Compiler Compiler
 Summary(pl.UTF-8):	SableCC - kompilator kompilatorów z Sable Research Group
 Name:		sablecc
